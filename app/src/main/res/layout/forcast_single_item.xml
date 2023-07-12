@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    android:backgroundTint="#5A5A5A"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/recyclerItemLR"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00 AM"
+            android:textColor="@color/white"
+            android:id="@+id/timeTV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00°C"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:id="@+id/temperatureTV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunny"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:id="@+id/conditionTV"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="5dp"
+            android:id="@+id/iconIV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00 K/H"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/windTV"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
